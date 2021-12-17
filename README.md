@@ -9,7 +9,7 @@ Meower is a social media platform written in Scratch 3.0 and Python, ported to H
 3. Fixed some security vulnerabilities
 
 ## Viewing/Running the source
-The source code for beta 4.8 can be opened with TurboWarp [here](https://turbowarp.org/editor?project_url=https://meower.org/Meower/Meower%20Beta%20Test%204.8.sb3&extension=https://mikedev101.github.io/cloudlink/B3-0.js).
+The source code for beta 4.8 can be opened with TurboWarp [here](https://turbowarp.org/editor?project_url=meower.org/Meower/Meower%20Beta%20Test%204.8.sb3&extension=https://mikedev101.github.io/cloudlink/B3-0.js).
 
 ### Opening the source with a diffrent editor
 1. Download the source code file (*.sb3)
