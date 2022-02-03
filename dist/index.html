@@ -289,6 +289,9 @@
           document.body.appendChild(fullscreenButton);
         }
       }
+      scaffolding.setAccentColor("#ff4c4c");
+
+      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:"));
 
       vm.setTurboMode(true);
       if (vm.setInterpolation) vm.setInterpolation(false);
