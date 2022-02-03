@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Meower Beta 5</title>
+  <title>Meower</title>
   <style>
     body {
       color: #ffffff;
@@ -212,10 +212,10 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("meower_user".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setUsername("".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
-      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:"));
+      ;
 
       const greenFlagButton = document.createElement('img');
       greenFlagButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.63 17.5"><path d="M.75 2a6.44 6.44 0 017.69 0h0a6.44 6.44 0 007.69 0v10.4a6.44 6.44 0 01-7.69 0h0a6.44 6.44 0 00-7.69 0" fill="#4cbf56" stroke="#45993d" stroke-linecap="round" stroke-linejoin="round"/><path stroke-width="1.5" fill="#4cbf56" stroke="#45993d" stroke-linecap="round" stroke-linejoin="round" d="M.75 16.75v-16"/></svg>');
@@ -231,27 +231,6 @@
       });
       scaffolding.addControlButton({
         element: greenFlagButton,
-        where: 'top-left'
-      });
-
-      const pauseButton = document.createElement('img');
-      pauseButton.className = 'control-button';
-      let isPaused = false;
-      pauseButton.addEventListener('click', () => {
-        isPaused = !isPaused;
-        vm.setPaused(isPaused);
-      });
-      const updatePause = () => {
-        if (isPaused) {
-          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="16" height="16" viewBox="0 0 4.2333332 4.2333335" xmlns="http://www.w3.org/2000/svg"><path d="m3.95163484 2.02835365-1.66643921.9621191-1.66643913.96211911V.10411543l1.66643922.9621191z" fill="#ffae00"/></svg>');
-        } else {
-          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="16" height="16" viewBox="0 0 4.2333332 4.2333335" xmlns="http://www.w3.org/2000/svg"><g fill="#ffae00"><path d="M.389.19239126h1.2631972v3.8485508H.389zM2.5810001.19239126h1.2631972v3.8485508H2.5810001z"/></g></svg>');
-        }
-      }
-      vm.on('P4_PAUSE', updatePause);
-      updatePause();
-      scaffolding.addControlButton({
-        element: pauseButton,
         where: 'top-left'
       });
 
@@ -326,7 +305,7 @@
       });
 
       if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false,"unsafeCloudBehaviors":false,"pause":true});
+        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false,"unsafeCloudBehaviors":false,"pause":false});
       }
 
       for (const extension of []) {
@@ -513,7 +492,7 @@
 					"arguments": {
 						"ADDRESS": {
 							"type": "string",
-							"defaultValue": 'ws://127.0.0.1:3000/',
+							"defaultValue": 'ws://192.168.86.208:3000/',
 						},
 					},
                 },
