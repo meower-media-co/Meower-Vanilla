@@ -6,10 +6,15 @@ Meower-Vanilla is the original, Scratch-based client for Meower. It runs on Turb
 
 ### [Launch Meower!](https://app.meower.org)
 
+## Notice of legacy support
+Scratch-based Meower clients will be moved to [Legacy-Meower-Yoom](https://github.com/meower-media-co/Legacy-Meower-Yoom) in the future, as future Meower Clients will stop using Scratch.
+
 ## Changelog for the [current build](https://app.meower.org)
 
-1. Homepage will now fetch posts using APIv0.
-2. Bugfix for homepage posts not being sorted correctly.
+1. Fix for broken Beta 5 Release 4 source code.
+2. Add feature to leave chats.
+3. Minor networking-related code changes.
+4. Added error screens for when an API request fails.
 
 ## How do I view/load/edit the source code?
 
