@@ -7,7 +7,7 @@ Meower-Vanilla is the original, Scratch-based client for Meower. It runs on Turb
 ### [Launch Meower!](https://app.meower.org)
 
 ## Notice of legacy support
-Scratch-based Meower clients will be moved to [Legacy-Meower-Yoom](https://github.com/meower-media-co/Legacy-Meower-Yoom) in the future, as future Meower Clients will stop using Scratch.
+Scratch-based Meower clients will be moved to [Legacy-Quacker](https://github.com/meower-media-co/Legacy-Quacker) in the future, as future Meower Clients will stop using Scratch.
 
 ## Changelog for the [current build](https://app.meower.org)
 
