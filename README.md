@@ -11,10 +11,9 @@ Scratch-based Meower clients will be moved to [Legacy-Quacker](https://github.co
 
 ## Changelog for the [current build](https://app.meower.org)
 
-1. Fix for broken Beta 5 Release 4 source code.
-2. Add feature to leave chats.
-3. Minor networking-related code changes.
-4. Added error screens for when an API request fails.
+1. Bugfixes for home getting flipped if you press escape on the post creator.
+2. Bugfix for server's indexing system.
+3. Chats IDs are somewhat useable, the remaining issues will be fixed server-side.
 
 ## How do I view/load/edit the source code?
 
