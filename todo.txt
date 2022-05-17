@@ -1,0 +1,9 @@
+-Add new message icon to messages
+-Add account deletion option to settings
+-Add account suspended screen on trying to make posts
+-Add banned tag to profiles
+-Add join date to profiles
+-Add block option to profiles
+-Add members menu for group chats
+-Add button to allow users to delete their own posts
+-Clean the rest of the server up
