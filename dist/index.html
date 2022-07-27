@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Meower Anniversary</title>
+  <title>Meower AE</title>
   <style>
     body {
       color: #ffffff;
@@ -161,7 +161,7 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    <h1 class="loading-text">Loading Party... (Happy 2nd!)</h1>
+    
     
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
@@ -223,11 +223,11 @@
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
-      scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Meower Anniversary.sb3"));
+      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@source.sb3"));
 
       vm.setTurboMode(true);
       if (vm.setInterpolation) vm.setInterpolation(false);
-      if (vm.setFramerate) vm.setFramerate(200);
+      if (vm.setFramerate) vm.setFramerate(240);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
         fencing: false,
@@ -274,7 +274,7 @@
     getInfo () {
         return {
             "id": 'networking',
-            "name": 'CloudLink TUROB',
+            "name": 'CloudLink TURBO',
 			"blockIconURI": this.cl_block,
 			"menuIconURI": this.cl_icon,
             "blocks": [
@@ -370,21 +370,6 @@
 							"defaultValue": '{"fruit": {"apples": 2, "bananas": 3}, "total_fruit": 5}',
 						},
 					},
-				},
-				{
-					"opcode": 'getFromJSONArray',
-					"blockType": "reporter",
-					"text": 'Get [NUM] from JSON array [ARRAY]',
-					"arguments": {
-						"NUM": {
-							"type": "number",
-							"defaultValue": 0,
-						},
-						"ARRAY": {
-							"type": "string",
-							"defaultValue": '["foo","bar"]',
-						}
-					}
 				},
 				{
                 	"opcode": 'isValidJSON',
@@ -865,18 +850,6 @@
 		};
 	};
 	
-getFromJSONArray({
-	NUM,
-	ARRAY
-}) {
-	var json_array = JSON.parse(ARRAY);
-	if (json_array[NUM] == "undefined") {
-		return "";
-	} else {
-		return json_array[NUM];
-	}  
-};
-
     openSocket({
 		ADDRESS
 	}) {
@@ -1075,7 +1048,7 @@ getFromJSONArray({
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (true) {
+      if (false) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
