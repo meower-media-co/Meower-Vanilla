@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>meower</title>
+  <title>Meower AE</title>
   <style>
     body {
       color: #ffffff;
@@ -133,12 +133,18 @@
       cursor: auto;
     }
     .sc-monitor-root[opcode^="data_"] .sc-monitor-value-color {
-      background-color: #ff8c1a !important;
+      background-color: #ff8c1a;
+    }
+    .sc-monitor-row-value-outer {
+      background-color: #fc662c;
+    }
+    .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
+      background-color: #e25b27;
     }
     
   </style>
   <meta name="theme-color" content="#000000">
-  <link rel="icon" href="data:image/png;base64,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">
+  
 </head>
 <body>
   <div id="app"></div>
@@ -155,7 +161,7 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    <h1 class="loading-text">Getting ready for BETA 5 AWESOMENESS...</h1>
+    
     
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
@@ -217,56 +223,11 @@
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
-      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:"));
-
-      if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
-        let isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
-        const fullscreenButton = document.createElement('img');
-        fullscreenButton.className = 'control-button fullscreen-button';
-        fullscreenButton.addEventListener('click', () => {
-          if (isFullScreen) {
-            if (document.exitFullscreen) {
-              document.exitFullscreen();
-            } else if (document.webkitExitFullscreen) {
-              document.webkitExitFullscreen();
-            }
-          } else {
-            if (document.body.requestFullscreen) {
-              document.body.requestFullscreen();
-            } else if (document.body.webkitRequestFullscreen) {
-              document.body.webkitRequestFullscreen();
-            }
-          }
-        });
-        const otherControlsExist = false;
-        const fillColor = otherControlsExist ? '#575E75' : '#ffffff';
-        const updateFullScreen = () => {
-          isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
-          document.body.classList.toggle('is-fullscreen', isFullScreen);
-          if (isFullScreen) {
-            fullscreenButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="' + fillColor + '" fill-rule="evenodd"><path d="M12.662 3.65l.89.891 3.133-2.374a.815.815 0 011.15.165.819.819 0 010 .986L15.467 6.46l.867.871c.25.25.072.664-.269.664L12.388 8A.397.397 0 0112 7.611V3.92c0-.341.418-.514.662-.27M7.338 16.35l-.89-.89-3.133 2.374a.817.817 0 01-1.15-.166.819.819 0 010-.985l2.37-3.143-.87-.871a.387.387 0 01.27-.664L7.612 12a.397.397 0 01.388.389v3.692a.387.387 0 01-.662.27M7.338 3.65l-.89.891-3.133-2.374a.815.815 0 00-1.15.165.819.819 0 000 .986l2.37 3.142-.87.871a.387.387 0 00.27.664L7.612 8A.397.397 0 008 7.611V3.92a.387.387 0 00-.662-.27M12.662 16.35l.89-.89 3.133 2.374a.817.817 0 001.15-.166.819.819 0 000-.985l-2.368-3.143.867-.871a.387.387 0 00-.269-.664L12.388 12a.397.397 0 00-.388.389v3.692c0 .342.418.514.662.27"/></g></svg>');
-          } else {
-            fullscreenButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="' + fillColor + '" fill-rule="evenodd"><path d="M16.338 7.35l-.89-.891-3.133 2.374a.815.815 0 01-1.15-.165.819.819 0 010-.986l2.368-3.142-.867-.871a.387.387 0 01.269-.664L16.612 3a.397.397 0 01.388.389V7.08a.387.387 0 01-.662.27M3.662 12.65l.89.89 3.133-2.374a.817.817 0 011.15.166.819.819 0 010 .985l-2.37 3.143.87.871c.248.25.071.664-.27.664L3.388 17A.397.397 0 013 16.611V12.92c0-.342.418-.514.662-.27M3.662 7.35l.89-.891 3.133 2.374a.815.815 0 001.15-.165.819.819 0 000-.986L6.465 4.54l.87-.871a.387.387 0 00-.27-.664L3.388 3A.397.397 0 003 3.389V7.08c0 .341.418.514.662.27M16.338 12.65l-.89.89-3.133-2.374a.817.817 0 00-1.15.166.819.819 0 000 .985l2.368 3.143-.867.871a.387.387 0 00.269.664l3.677.005a.397.397 0 00.388-.389V12.92a.387.387 0 00-.662-.27"/></g></svg>');
-          }
-        };
-        updateFullScreen();
-        document.addEventListener('fullscreenchange', updateFullScreen);
-        document.addEventListener('webkitfullscreenchange', updateFullScreen);
-        if (otherControlsExist) {
-          fullscreenButton.className = 'control-button fullscreen-button';
-          scaffolding.addControlButton({
-            element: fullscreenButton,
-            where: 'top-right'
-          });
-        } else {
-          fullscreenButton.className = 'standalone-fullscreen-button';
-          document.body.appendChild(fullscreenButton);
-        }
-      }
+      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@source.sb3"));
 
       vm.setTurboMode(true);
       if (vm.setInterpolation) vm.setInterpolation(false);
-      if (vm.setFramerate) vm.setFramerate(250);
+      if (vm.setFramerate) vm.setFramerate(240);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
         fencing: false,
@@ -290,7 +251,9 @@
       handleError(e);
     }
   </script>
-  <script>class Networking {
+  <script>
+    try {
+      class Networking {
     constructor (runtime, extensionId) {
 		this.cl_icon = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4yLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA0NSA0NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUgNDU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiMwRkJEOEM7fQ0KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxNy41MDAxNCwtMTU3LjUwMDEzKSI+DQoJPGc+DQoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMTcuNSwxODBjMC0xMi40LDEwLjEtMjIuNSwyMi41LTIyLjVzMjIuNSwxMC4xLDIyLjUsMjIuNXMtMTAuMSwyMi41LTIyLjUsMjIuNVMyMTcuNSwxOTIuNCwyMTcuNSwxODANCgkJCUwyMTcuNSwxODB6Ii8+DQoJCTxnPg0KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTIzMC4zLDE4MC4xYzUuNy00LjcsMTMuOS00LjcsMTkuNiwwIi8+DQoJCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjI1LjMsMTc1LjFjOC40LTcuNCwyMS03LjQsMjkuNCwwIi8+DQoJCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjM1LjIsMTg1YzIuOS0yLjEsNi44LTIuMSw5LjcsMCIvPg0KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTI0MCwxOTAuNEwyNDAsMTkwLjQiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K';
 		this.cl_block = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4yLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA0NSA0NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUgNDU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTIuOCwyMi42YzUuNy00LjcsMTMuOS00LjcsMTkuNiwwIi8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTcuOCwxNy42YzguNC03LjQsMjEtNy40LDI5LjQsMCIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNy43LDI3LjVjMi45LTIuMSw2LjgtMi4xLDkuNywwIi8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLjUsMzIuOUwyMi41LDMyLjkiLz4NCjwvZz4NCjwvc3ZnPg0K';
@@ -356,6 +319,30 @@
 							"type": "string",
 							"defaultValue": 'https://mikedev101.github.io/cloudlink/fetch_test',
 						},
+					}
+				},
+                {
+					"opcode": 'requestURL', 
+					"blockType": "reporter",
+					"blockAllThreads": "true",
+					"text": 'Request URL [method] [url] [data] [headers]',
+					"arguments": {
+                        "method": {
+							"type": "string",
+							"defaultValue": 'GET',
+						},
+						"url": {
+							"type": "string",
+							"defaultValue": 'https://mikedev101.github.io/cloudlink/fetch_test',
+						},
+                        "data": {
+                            "type": "string",
+                            "defaultValue": '{}'
+                        },
+                        "headers": {
+                            "type": "string",
+                            "defaultValue": '{}'
+                        },
 					}
 				},
 				{
@@ -813,7 +800,30 @@
 	};
 	
 	fetchURL(args) {
-		return fetch(args.url).then(response => response.text());
+		return fetch(args.url, {
+            method: "GET"
+        }).then(response => response.text());
+	};
+
+    requestURL(args) {
+        if (args.method == "GET" || args.method == "HEAD") {
+            return fetch(args.url, {
+                method: args.method,
+                headers: JSON.parse(args.headers)
+            }).then(response => response.text());
+        } else {
+            var headers = JSON.parse(args.headers);
+            var form = new FormData();
+            var form_data = JSON.parse(args.data)
+            for (var i=0; i < Object.keys(form_data).length; i++) {
+                form.append(Object.keys(form_data)[i], Object.values(form_data)[i])
+            }
+            return fetch(args.url, {
+                method: args.method,
+                body: form,
+                headers: headers
+            }).then(response => response.text());
+        }
 	};
 	
 	parseJSON({
@@ -992,7 +1002,11 @@
         window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName);
 		console.log("Unsandboxed mode detected. Good.");
     };
-})()</script>
+})()
+    } catch (e) {
+      handleError(e);
+    }
+  </script>
   
     <script>
       const getProjectData = (function() {
