@@ -161,8 +161,10 @@ class MeowerUtils {
 			this.time_unit = 5;
 			this.difference =  Math.round(this.difference / 31449600);
 		}
-		if (this.difference == 1) {
-			return String(this.difference) + [" second ago", " minute ago", " hour ago", " day ago", " month ago", " year ago"][this.time_unit];
+        if (this.difference <= 0) {
+            return "just now";
+        } else if (this.difference == 1) {
+			return ["a second ago", "a minute ago", "a hour ago", "a day ago", "a month ago", "a year ago"][this.time_unit];
 		} else {
 			return String(this.difference) + [" seconds ago", " minutes ago", " hours ago", " days ago", " months ago", " years ago"][this.time_unit];
 		}
