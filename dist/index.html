@@ -1233,8 +1233,10 @@ class MeowerUtils {
 			this.time_unit = 5;
 			this.difference =  Math.round(this.difference / 31449600);
 		}
-		if (this.difference == 1) {
-			return String(this.difference) + [" second ago", " minute ago", " hour ago", " day ago", " month ago", " year ago"][this.time_unit];
+        if (this.difference <= 0) {
+            return "just now";
+        } else if (this.difference == 1) {
+			return ["a second ago", "a minute ago", "a hour ago", "a day ago", "a month ago", "a year ago"][this.time_unit];
 		} else {
 			return String(this.difference) + [" seconds ago", " minutes ago", " hours ago", " days ago", " months ago", " years ago"][this.time_unit];
 		}
@@ -1277,20 +1279,17 @@ class MeowerUtils {
 	};
 };
 
-(function() {
-    var extensionClass = MeowerUtils;
-    if (typeof window === "undefined" || !window.vm) {
-		console.log("Sandboxed mode detected, Meower Utils cannot load in sandbox mode.");
-    } else {
-        var extensionInstance = new extensionClass(window.vm.extensionManager.runtime, window);
-        var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance);
-        window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName);
-		console.log("Unsandboxed mode detected. Good.");
-    };
-})()
-    } catch (e) {
-      handleError(e);
-    }
+var extensionClass = MeowerUtils;
+if (typeof window === "undefined" || !window.vm) {
+    Scratch.extensions.register(new extensionClass());
+    console.log("Sandboxed mode detected, performance will suffer because of the extension being sandboxed.");
+} else {
+    var extensionInstance = new extensionClass(window.vm.extensionManager.runtime, window);
+    var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance);
+    window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName);
+    console.log("Unsandboxed mode detected. Good.");
+};
+	    
   </script>
   
     <script>
