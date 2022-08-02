@@ -877,7 +877,7 @@
                 headers: JSON.parse(args.headers),
                 body: JSON.parse(args.data)
             }).then(response => response.text());
-        } 
+        }
 	};
 	
 	parseJSON({
@@ -912,7 +912,7 @@ getFromJSONArray({
 	if (json_array[NUM] == "undefined") {
 		return "";
 	} else {
-		return String(json_array[NUM]);
+		return json_array[NUM];
 	}  
 };
 
@@ -1289,7 +1289,9 @@ if (typeof window === "undefined" || !window.vm) {
     window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName);
     console.log("Unsandboxed mode detected. Good.");
 };
-	    
+    } catch (e) {
+      handleError(e);
+    }
   </script>
   
     <script>
