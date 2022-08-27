@@ -9,14 +9,15 @@ This branch contains code that is HIGHLY EXPERIMENTAL and will be UNDERGOING LOT
 
 ## Roadmap
  * [x] Basic code outline
- * [ ] Rendering engine
+ * [x] Rendering engine
     * [x] Full post objects
     * [x] Single-line post objects
-    * [ ] Single-line w/ bold header post objects
+    * [x] Single-line w/ bold header post objects
     * [x] Interactive buttons
  * [x] Standardized configuration file
- * [ ] Dynamic resizing
- * [ ] Sprite-pen hybrid GUI
- * [ ] API-based BGM
- * [ ] API-based Networking
- * [ ] Minor CloudLink usage
+ * [x] Dynamic resizing
+ * [x] Sprite-pen hybrid GUI
+ * [x] API-based BGM
+ * [x] SpriteThread
+ * [ ] APIv0
+ * [ ] CloudLink 4.0
