@@ -22,6 +22,9 @@ class Networking {
             "name": 'CloudLink TURBO',
 			"blockIconURI": this.cl_block,
 			"menuIconURI": this.cl_icon,
+            color0: "#ff00ff",
+            color1: "#ff00ff",
+            color2: "#ff00ff",
             "blocks": [
 				{
                 	"opcode": 'linkState',
