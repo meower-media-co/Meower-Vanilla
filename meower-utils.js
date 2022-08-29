@@ -4,7 +4,7 @@ class MeowerUtils {
     constructor (runtime, window, extensionId) {
 		this.icon = 'data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMTMuOCIgaGVpZ2h0PSIxMDcuNDA3NDkiIHZpZXdCb3g9IjAsMCwxMTMuOCwxMDcuNDA3NDkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODMuMSwtMTI2LjI5NjI2KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnPjxwYXRoIGQ9Ik0yOTYuOSwxOTYuNDAzNzRjMCwyOC4yIC0yNS41LDM3LjMgLTU2LjksMzcuM2MtMzEuNCwwIC01Ni45LC05IC01Ni45LC0zNy4zYzAsLTEzLjMgMy44LC0yOC40IDExLjksLTQwLjhsLTYuNywtMjIuNGMtMS4zLC00LjMgMywtOC4yIDcsLTYuNWwyMi4xLDkuMmM2LjUsLTIuOSAxNCwtNC42IDIyLjYsLTQuNmM4LjQsMCAxNS45LDEuNyAyMi40LDQuN2wyMi4zLC05LjNjNCwtMS42IDguMywyLjMgNyw2LjVsLTYuOCwyMi43YzguMSwxMi4yIDEyLDI3LjMgMTIsNDAuNXoiIGZpbGw9IiNmZjczMTkiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yODQuNSwyMTQuMjAzNzRjMCwxNC44IC0yMCwxOS41IC00NC42LDE5LjVjLTI0LjYsMCAtNDQuNiwtNC43IC00NC42LC0xOS41YzAsLTE0LjggMTMuMywtMzQgNDQuNiwtMzRjMzAuNiwtMC4xIDQ0LjYsMTkuMiA0NC42LDM0eiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIzNSwxODYuOTAzNzRjMCwtMiAyLjIsLTIuNiA1LC0yLjZjMi44LDAgNSwwLjYgNSwyLjZjMCwyIC0xLjUsNC41IC01LDQuNWMtMy41LDAgLTUsLTIuNSAtNSwtNC41eiIgZmlsbD0iIzk0NTYwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxwYXRoIGQ9Ik0yNTYuOSwxOTMuNDAzNzRjMCw0LjcgLTMuOCw4LjQgLTguNSw4LjRjLTQuNywwIC04LjUsLTMuOCAtOC41LC04LjRjMCwtMC4yIDAsLTAuMiAwLC0wLjJjMCwtMC4zIDAsLTAuNSAwLC0wLjVjMCwwIDAsMC4yIDAsMC41YzAsMCAwLDAgMCwwLjJjMCw0LjcgLTMuOCw4LjQgLTguNSw4LjRjLTQuNywwIC04LjUsLTMuOCAtOC41LC04LjQiLz48L2c+PHBhdGggZD0iTTIyNS4zLDE2OS44MDM3NGMwLC0yLjY1MDk3IDIuMTQ5MDMsLTQuOCA0LjgsLTQuOGMyLjY1MDk3LDAgNC44LDIuMTQ5MDMgNC44LDQuOGMwLDIuNjUwOTcgLTIuMTQ5MDMsNC44IC00LjgsNC44Yy0yLjY1MDk3LDAgLTQuOCwtMi4xNDkwMyAtNC44LC00Ljh6IiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMjQ1LDE2OS44MDM3NGMwLC0yLjY1MDk3IDIuMTQ5MDMsLTQuOCA0LjgsLTQuOGMyLjY1MDk3LDAgNC44LDIuMTQ5MDMgNC44LDQuOGMwLDIuNjUwOTcgLTIuMTQ5MDMsNC44IC00LjgsNC44Yy0yLjY1MDk3LDAgLTQuOCwtMi4xNDkwMyAtNC44LC00Ljh6IiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMjA1LjIsMTQ0LjQwMzc0Yy0zLjIsMi45IC01LjksNS41IC04LjMsOS41bC02LC0yMC44Yy0wLjQsLTIuNSAxLjksLTQuNiA0LjQsLTMuOWwxOS45LDguM2MtNC41LDEuOCAtNy4xLDQuMiAtMTAsNi45eiIgZmlsbD0iIzc3NTAwYyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI2NS4yLDEzNy41MDM3NGwxOS45LC04LjNjMi41LC0wLjcgNC44LDEuNCA0LjQsMy45bC02LDIwLjhjLTIuNCwtNCAtNS4xLC02LjYgLTguMywtOS41Yy0yLjksLTIuNyAtNS41LC01LjEgLTEwLC02Ljl6IiBmaWxsPSIjNzc1MDBjIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48L2c+PC9nPjwvZz48L3N2Zz4=';
         this.runtime = runtime;
-		this.window = window; 
+		this.window = window;
 		this.audio_player = new Audio();
 		this.popup_got_data = false;
 		// To prevent destroying of images that weren't made with the extension
@@ -38,24 +38,24 @@ class MeowerUtils {
 					"text": 'stamp image [IMG] at x: [X] y: [Y] x scale: [XSCALE] y scale: [YSCALE]',
 					"arguments": {
 						"IMG": {
-							"type": null,
-							"defaultValue": '',
+							"type": "number",
+							"defaultValue": 0,
 						},
 						"X": {
 							"type": "number",
-							"defaultValue": '0',
+							"defaultValue": 0,
 						},
 						"Y": {
 							"type": "number",
-							"defaultValue": '0',
+							"defaultValue": 0,
 						},
 						"XSCALE": {
 							"type": "number",
-							"defaultValue": '100',
+							"defaultValue": 100,
 						},
 						"YSCALE": {
 							"type": "number",
-							"defaultValue": '100',
+							"defaultValue": 100,
 						},
 					},
 				},
@@ -65,8 +65,19 @@ class MeowerUtils {
 					"text": 'delete image [IMG]',
 					"arguments": {
 						"IMG": {
-							"type": null,
-							"defaultValue": '',
+							"type": "number",
+							"defaultValue": 0,
+						},
+					},
+				},
+                {
+					"opcode": 'getImageSize',
+					"blockType": "reporter",
+					"text": 'get image size [IMG]',
+					"arguments": {
+						"IMG": {
+							"type": "number",
+							"defaultValue": 0,
 						},
 					},
 				},
@@ -240,6 +251,14 @@ class MeowerUtils {
 			console.error("Error deleting image:", e);
 		}
 	};
+    getImageSize({IMG}) {
+        if (this.runtime.renderer._allDrawables[IMG] || this.createdImages.has(IMG)) {
+            let img_data = this.runtime.renderer._allDrawables[IMG].getAABB();
+            let img_width = (img_data["right"] - img_data["left"]);
+            let img_height = (img_data["top"] - img_data["bottom"]);
+            return JSON.stringify({"w": img_width, "h": img_height})
+        }
+    };
 	playAudioFromURL({URL}) {
 		this.audio_player.pause();
 		this.audio_player.currentTime = 0;
@@ -333,14 +352,14 @@ class MeowerUtils {
 };
 
 (function() {
-	var extensionClass = MeowerUtils;
-	if (typeof window === "undefined" || !window.vm) {
-		console.log("Meower Utils cannot load in sandbox mode.");
-	} else {
-		var extensionInstance = new extensionClass(window.vm.extensionManager.runtime, window);
-		var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance);
-		window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName);
-		console.log("Meower Utils loaded!");
-		isInit = true;
-	};
+    var extensionClass = MeowerUtils;
+    if (typeof window === "undefined" || !window.vm) {
+        console.log("Meower Utils cannot load in sandbox mode.");
+    } else {
+        var extensionInstance = new extensionClass(window.vm.extensionManager.runtime, window);
+        var serviceName = window.vm.extensionManager._registerInternalExtension(extensionInstance);
+        window.vm.extensionManager._loadedExtensions.set(extensionInstance.getInfo().id, serviceName);
+        console.log("Meower Utils loaded!");
+        isInit = true;
+    };
 })()
