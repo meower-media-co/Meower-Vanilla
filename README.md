@@ -2,7 +2,7 @@
 
 Meower is a free, open-source, and nonprofit social media platform.
 
-Meower-Vanilla is the original, Scratch-based client for Meower. It runs on TurboWarp and CloudLink Turbo. This version of the Meower Client is intended for use on Destkops and Laptops, and used as a reference for other clients.
+Meower-Vanilla is the original, Scratch-based client for Meower. It runs on TurboWarp and CloudLink Turbo. This version of the Meower Client is intended for use on Desktops and Laptops, and used as a reference for other clients.
 
 ### [Launch Meower!](https://app.meower.org)
 
