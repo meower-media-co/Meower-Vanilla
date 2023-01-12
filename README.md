@@ -1,5 +1,13 @@
 # Meower
 
+> **Note**
+> 
+> This client is being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)
+
+> **Warning**
+> 
+> This client is being upgraded to use the Cloudlink 4 protocol. Any feature-enhancement PRs should be refrained.
+
 Meower is a free, open-source, and nonprofit social media platform.
 
 Meower-Vanilla is the original, Scratch-based client for Meower. It runs on TurboWarp and CloudLink Turbo. This version of the Meower Client is intended for use on Desktops and Laptops, and used as a reference for other clients.
