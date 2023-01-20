@@ -1,21 +1,16 @@
-# Meower
+# Meower Vanilla
+Meower-Vanilla is the original, Scratch-based client for Meower. It runs on TurboWarp and CloudLink Turbo. This version of the Meower Client is intended for use on Desktops and Laptops, and used as a reference for other clients.
 
 > **Note**
 > 
-> This client is being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)
+> ***This client is being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)***
+> Scratch-based Meower clients will be moved to [Legacy-Meower-Yoom](https://github.com/meower-media-co/Legacy-Meower-Yoom) in the future.
 
 > **Warning**
 > 
 > This client is being upgraded to use the Cloudlink 4 protocol. Any feature-enhancement PRs should be refrained.
 
-Meower is a free, open-source, and nonprofit social media platform.
-
-Meower-Vanilla is the original, Scratch-based client for Meower. It runs on TurboWarp and CloudLink Turbo. This version of the Meower Client is intended for use on Desktops and Laptops, and used as a reference for other clients.
-
-### [Launch Meower!](https://app.meower.org)
-
-## Notice of legacy support
-Scratch-based Meower clients will be moved to [Legacy-Quacker](https://github.com/meower-media-co/Legacy-Quacker) in the future, as future Meower Clients will stop using Scratch.
+### [Launch Meower!](https://old.meower.org)
 
 ## Changelog for the [current build](https://app.meower.org)
 
@@ -40,13 +35,3 @@ Step 5: Paste the JS code into your rule.
 ![Screenshot (8)](https://user-images.githubusercontent.com/12957745/152203710-a33fbbf2-8867-44f9-828f-9fb11d7a40b2.png)
 
 Step 6: Go to [TurboWarp Editor](https://turbowarp.org/editor?fps=250&clones=Infinity&offscreen&limitless&hqpen&size=640x360&turbo) and load the source code file!
-
-## Contributing to the source
-
-1. Fork the repository.
-2. Create a new branch.
-3. Follow the instructions above to load the source code.
-4. Make changes.
-5. Commit and push your changes.
-6. Make a pull request, and explain the changes you made.
-7. If it gets approved, the source code will be merged here.
