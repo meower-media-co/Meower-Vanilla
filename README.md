@@ -34,4 +34,6 @@ Step 5: Paste the JS code into your rule.
 
 ![Screenshot (8)](https://user-images.githubusercontent.com/12957745/152203710-a33fbbf2-8867-44f9-828f-9fb11d7a40b2.png)
 
-Step 6: Go to [TurboWarp Editor](https://turbowarp.org/editor?fps=250&clones=Infinity&offscreen&limitless&hqpen&size=640x360&turbo) and load the source code file!
+Step 6: Do the same for [utils.js](https://raw.githubusercontent.com/meower-media-co/Meower-Vanilla/main/utils.js), so you should have one injector rule for CloudLink Turbo and one for utils.js.
+
+Step 7: Go to [TurboWarp Editor](https://turbowarp.org/editor?fps=250&clones=Infinity&offscreen&limitless&hqpen&size=640x360&turbo) and load the source code file!
