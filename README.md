@@ -6,10 +6,6 @@ Meower-Vanilla is the original, Scratch-based client for Meower. It runs on Turb
 > ***This client is being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)***
 > Scratch-based Meower clients will be moved to [Legacy-Meower](https://github.com/meower-media-co/Legacy-Meower) in the future.
 
-> **Warning**
-> 
-> This client is being upgraded to use the Cloudlink 4 protocol. Any feature-enhancement PRs should be refrained.
-
 ### [Launch Meower!](https://old.meower.org)
 
 ## Changelog for the [current build](https://app.meower.org)
