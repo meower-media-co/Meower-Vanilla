@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Meower Vanilla</title>
+  <title>Meower Scratch</title>
   <style>
     body {
       color: #ffffff;
@@ -202,7 +202,7 @@
       setProgress(0.1);
 
       const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 480;
+      scaffolding.width = 640;
       scaffolding.height = 360;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
@@ -224,7 +224,7 @@
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
-      ;
+      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:"));
 
       if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
         let isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
@@ -273,7 +273,7 @@
       }
 
       vm.setTurboMode(true);
-      if (vm.setInterpolation) vm.setInterpolation(true);
+      if (vm.setInterpolation) vm.setInterpolation(false);
       if (vm.setFramerate) vm.setFramerate(250);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
@@ -283,11 +283,11 @@
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
         enabled: true,
-        warpTimer: true
+        warpTimer: false
       });
 
       if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":true,"pause":false});
+        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false,"unsafeCloudBehaviors":false,"pause":false});
       }
 
       scaffolding.setExtensionSecurityManager({
@@ -431,9 +431,12 @@
 	};
 
 	stopAudio({}) {
-		this.audio_player.pause();
-		this.audio_player.currentTime = 0;
-		this.audio_player.src = null;
+		turnstile.render('#captcha', {
+            sitekey: '0x4AAAAAAAAl3mR-O3ek14Lc',
+            callback: function(token) {
+                alert(`Challenge Success ${token}`);
+            },
+        });
 	};
 
 	convertEpoch({epoch}) {
@@ -1141,12 +1144,7 @@ getFromJSONArray({
 	if (json_array[NUM] == "undefined") {
 		return "";
 	} else {
-		if (typeof json_array[NUM] === "object") {
-			var json_array = JSON.stringify(json_array[NUM]);
-			return json_array;
-		} else {
-			return json_array[NUM];
-		}
+		return String(json_array[NUM]);
 	}  
 };
 
@@ -1303,6 +1301,7 @@ getFromJSONArray({
 		console.log("Unsandboxed mode detected. Good.");
     };
 })()
+
     } catch (e) {
       handleError(e);
     }
@@ -1348,7 +1347,7 @@ getFromJSONArray({
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (true) {
+      if (false) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
