@@ -3,16 +3,10 @@ Meower-Vanilla was the original, Scratch-based client for Meower. It ran on Turb
 
 > **Note**
 > 
-> ***This client was being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)***
-> Scratch-based Meower clients will be moved to [Legacy-Meower](https://github.com/meower-media-co/Legacy-Meower) in the future.
+> ***This client was retired in favor of [Meower Svelte](https://github.com/meower-media-co/Meower-Svelte), and has been archived here for historical purposes.***
+> Previous Scratch-based Meower clients have been moved to [Legacy-Meower](https://github.com/meower-media-co/Legacy-Meower).
 
 ### [Launch Meower.](https://old.meower.org)
-
-## Changelog for the [current build](https://app.meower.org)
-
-1. Bugfixes for home getting flipped if you press escape on the post creator.
-2. Bugfix for server's indexing system.
-3. Chats IDs are somewhat useable, the remaining issues will be fixed server-side.
 
 ## How do I view/load/edit the source code?
 
