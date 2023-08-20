@@ -1,12 +1,12 @@
 # Meower Vanilla
-Meower-Vanilla is the original, Scratch-based client for Meower. It runs on TurboWarp and CloudLink Turbo. This version of the Meower Client is intended for use on Desktops and Laptops, and used as a reference for other clients.
+Meower-Vanilla was the original, Scratch-based client for Meower. It ran on TurboWarp and CloudLink Turbo. This version of the Meower Client was intended for use on Desktops and Laptops, and used as a reference for other clients.
 
 > **Note**
 > 
-> ***This client is being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)***
+> ***This client was being retired in favor of [Meower Svelte.](https://github.com/meower-media-co/Meower-Svelte)***
 > Scratch-based Meower clients will be moved to [Legacy-Meower](https://github.com/meower-media-co/Legacy-Meower) in the future.
 
-### [Launch Meower!](https://old.meower.org)
+### [Launch Meower.](https://old.meower.org)
 
 ## Changelog for the [current build](https://app.meower.org)
 
